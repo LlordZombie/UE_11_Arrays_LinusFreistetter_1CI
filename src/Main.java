@@ -6,6 +6,7 @@ public class Main {
         int[] a = {1, 2, 3, 4, 5, 6, 7, 8};
         System.out.println("contains(a,5) = " + contains(a, 9));
         System.out.println("getLottoTipp() = " + Arrays.toString(getLottoTipp()));
+        System.out.println("lottoTippToString(getLottoTipp()) = " + lottoTippToString(getLottoTipp()));
     }
 
     public static int random(int min, int max) {
@@ -35,9 +36,10 @@ public class Main {
         return lottoTipp;
     }
 
-    public static String lottoTippToString(int[] lottoTipp){
+    public static String lottoTippToString(int[] lottoTipp) {
         String rString = "";
-
+        Arrays.sort(lottoTipp);
+        rString = String.format("%02d %02d %02d %02d %02d %02d %n", lottoTipp[0], lottoTipp[1], lottoTipp[2], lottoTipp[3], lottoTipp[4], lottoTipp[5]);
         return rString;
     }
 }
