@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a748f1fe-4830-4130-930b-9b028d403f2b" name="Changes" comment="schön formatierter lottotipToString ist da">
+    <list default="true" id="a748f1fe-4830-4130-930b-9b028d403f2b" name="Changes" comment="schoen gemacht">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -46,34 +46,21 @@
       <option name="presentableId" value="Default" />
       <updated>1676877663254</updated>
       <workItem from="1676877664404" duration="3036000" />
-      <workItem from="1676892303194" duration="6131000" />
     </task>
-    <task id="LOCAL-00001" summary="schön formatierter lottotipToString ist da">
-      <created>1676897673767</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676897673767</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="schön formatierter lottotipToString ist da" />
-    <option name="LAST_COMMIT_MESSAGE" value="schön formatierter lottotipToString ist da" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

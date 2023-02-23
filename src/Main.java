@@ -7,7 +7,7 @@ public class Main {
         System.out.println("contains(a,bin) = " + contains(a, "bin"));
         System.out.println("getLottoTipp() = " + Arrays.toString(getLottoTipp()));
         System.out.println("lottoTippToString(getLottoTipp()) = " + lottoTippToString(getLottoTipp()));
-        System.out.println("getNLottoTips(5) = " + Arrays.toString(getNLottoTips(5)));
+        System.out.println("getNLottoTips(10) = " + Arrays.toString(getNLottoTips(10)));
     }
 
     public static int random(int min, int max) {
@@ -40,7 +40,7 @@ public class Main {
     public static String lottoTippToString(int[] lottoTipp) {
         String rString;
         Arrays.sort(lottoTipp);
-        rString = String.format("%02d %02d %02d %02d %02d %02d %n", lottoTipp[0], lottoTipp[1], lottoTipp[2], lottoTipp[3], lottoTipp[4], lottoTipp[5]);
+        rString = String.format("%2d %2d %2d %2d %2d %2d %n", lottoTipp[0], lottoTipp[1], lottoTipp[2], lottoTipp[3], lottoTipp[4], lottoTipp[5]);
         return rString;
     }
 
@@ -56,6 +56,7 @@ public class Main {
 
     public static String[] getNLottoTips(int n) {
         String[] allLottoTips = new String[n];
+        String sortedLottotipp;
         for (int i = 0; i < n; i++) {
             allLottoTips[i] = "";
         }
@@ -70,13 +71,14 @@ public class Main {
                     singleLottoTip[j] = possibleNum;
                 }
             }
-            Arrays.sort(singleLottoTip);
-            if (!contains(allLottoTips, Arrays.toString(singleLottoTip))) {
-                allLottoTips[i] = Arrays.toString(singleLottoTip);
+            sortedLottotipp = lottoTippToString(singleLottoTip);
+            if (!contains(allLottoTips, sortedLottotipp)) {
+                allLottoTips[i] = sortedLottotipp;
             } else {
                 i--;
             }
-        }
+            Arrays.fill(singleLottoTip, 0);
+        }Arrays.sort(allLottoTips);
         return allLottoTips;
     }
 
